@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('leafy.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #00796b;
+            margin: 0;
+            padding: 0;
+            background-blend-mode: overlay;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .description, .research-questions, .insights {
+            margin-bottom: 20px;
+        }
+        .dropdown {
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .dropdown button {
+            background-color: #00796b;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            font-size: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dropdown-icon {
+            margin-left: 6px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 100%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: #00796b;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .content {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #00796b;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enhancing Interpretability of AI-Driven Healthcare Diagnostics</h1>
+        <div class="description">
+            <h2>Description</h2>
+            <p>In the era of AI-driven diagnosis, prediction, and treatment for chronic illnesses, the opaqueness of AI models poses a critical challenge. This research addresses the imperative need to enhance transparency and interpretability in artificial intelligence (AI) applications within the healthcare domain. We employ Explainable AI (XAI) techniques, including SHAP, ELI5, QLattice, LIME, and Anchor, in conjunction with machine learning algorithms, to bring clarity and comprehensibility to AI in healthcare. Our approach leverages supervised deep learning methods such as convolutional neural networks (CNN) for medical image interpretation, ensuring the dual goals of accuracy and interpretability. Additionally, ensemble methods like random forests and decision trees contribute significantly to the enhancement of AI-driven healthcare diagnostics' interpretability and trustworthiness. This research holds significant promise for healthcare. By making AI-driven diagnostics more interpretable, we unlock the potential for personalized and effective treatment plans. Healthcare professionals can confidently rely on AI recommendations, leading to improved patient care and outcomes. Moreover, patients gain a deeper understanding of their diagnoses and treatment options, fostering trust in the medical decision-making process. Our work bridges the gap between AI's capabilities and the need for transparency and trust in healthcare, promising a more reliable future in medical diagnostics and treatment.</p>
+        </div>
+        <div class="research-questions">
+            <h2>Research Questions</h2>
+            
+            <h3>Research Question 1</h3>
+            <div class="dropdown">
+                <button>Classification Report
+                    <span class="dropdown-icon">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showReport('report1-nonxai', 'insight1')">NON-XAI</a>
+                </div>
+            </div>
+            <div id="report1-nonxai" class="content">
+                <p>NON-XAI Classification Report for Research Question 1</p>
+                <!-- Embed your report here -->
+                <div id="insight1" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for NON-XAI Classification Report for Research Question 1</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Visualizations
+                    <span class="dropdown-icon">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showReport('vis1-nonxai', 'insight2')">NON-XAI</a>
+                    <a href="#" onclick="showReport('vis1-xai', 'insight3')">XAI</a>
+                </div>
+            </div>
+            <div id="vis1-nonxai" class="content">
+                <p>NON-XAI Visualizations for Research Question 1</p>
+                <!-- Embed your visualizations here -->
+                <div id="insight2" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for NON-XAI Visualizations for Research Question 1</p>
+                </div>
+            </div>
+            <div id="vis1-xai" class="content">
+                <p>XAI Visualizations for Research Question 1</p>
+                <!-- Embed your visualizations here -->
+                <div id="insight3" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for XAI Visualizations for Research Question 1</p>
+                </div>
+            </div>
+
+            <h3>Research Question 2</h3>
+            <div class="dropdown">
+                <button>Classification Report
+                    <span class="dropdown-icon">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showReport('report2-nonxai', 'insight4')">NON-XAI</a>
+                </div>
+            </div>
+            <div id="report2-nonxai" class="content">
+                <p>NON-XAI Classification Report for Research Question 2</p>
+                <!-- Embed your report here -->
+                <div id="insight4" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for NON-XAI Classification Report for Research Question 2</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Visualizations
+                    <span class="dropdown-icon">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showReport('vis2-nonxai', 'insight5')">NON-XAI</a>
+                    <a href="#" onclick="showReport('vis2-xai', 'insight6')">XAI</a>
+                </div>
+            </div>
+            <div id="vis2-nonxai" class="content">
+                <p>NON-XAI Visualizations for Research Question 2</p>
+                <!-- Embed your visualizations here -->
+                <div id="insight5" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for NON-XAI Visualizations for Research Question 2</p>
+                </div>
+            </div>
+            <div id="vis2-xai" class="content">
+                <p>XAI Visualizations for Research Question 2</p>
+                <!-- Embed your visualizations here -->
+                <div id="insight6" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for XAI Visualizations for Research Question 2</p>
+                </div>
+            </div>
+
+            <h3>Research Question 3</h3>
+            <div class="dropdown">
+                <button>Classification Report
+                    <span class="dropdown-icon">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showReport('report3-nonxai', 'insight7')">NON-XAI</a>
+                </div>
+            </div>
+            <div id="report3-nonxai" class="content">
+                <p>NON-XAI Classification Report for Research Question 3</p>
+                <!-- Embed your report here -->
+                <div id="insight7" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for NON-XAI Classification Report for Research Question 3</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Visualizations
+                    <span class="dropdown-icon">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showReport('vis3-nonxai', 'insight8')">NON-XAI</a>
+                    <a href="#" onclick="showReport('vis3-xai', 'insight9')">XAI</a>
+                </div>
+            </div>
+            <div id="vis3-nonxai" class="content">
+                <p>NON-XAI Visualizations for Research Question 3</p>
+                <!-- Embed your visualizations here -->
+                <div id="insight8" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for NON-XAI Visualizations for Research Question 3</p>
+                </div>
+            </div>
+            <div id="vis3-xai" class="content">
+                <p>XAI Visualizations for Research Question 3</p>
+                <!-- Embed your visualizations here -->
+                <div id="insight9" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for XAI Visualizations for Research Question 3</p>
+                </div>
+            </div>
+
+            <h3>Research Question 4</h3>
+            <div class="dropdown">
+                <button>Classification Report
+                    <span class="dropdown-icon">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showReport('report4-nonxai', 'insight10')">NON-XAI</a>
+                </div>
+            </div>
+            <div id="report4-nonxai" class="content">
+                <p>NON-XAI Classification Report for Research Question 4</p>
+                <!-- Embed your report here -->
+                <div id="insight10" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for NON-XAI Classification Report for Research Question 4</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Visualizations
+                    <span class="dropdown-icon">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showReport('vis4-nonxai', 'insight11')">NON-XAI</a>
+                    <a href="#" onclick="showReport('vis4-xai', 'insight12')">XAI</a>
+                </div>
+            </div>
+            <div id="vis4-nonxai" class="content">
+                <p>NON-XAI Visualizations for Research Question 4</p>
+                <!-- Embed your visualizations here -->
+                <div id="insight11" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for NON-XAI Visualizations for Research Question 4</p>
+                </div>
+            </div>
+            <div id="vis4-xai" class="content">
+                <p>XAI Visualizations for Research Question 4</p>
+                <!-- Embed your visualizations here -->
+                <div id="insight12" class="insights">
+                    <h4>Insights</h4>
+                    <p>Insights for XAI Visualizations for Research Question 4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            content.style.display = content.style.display === "none" ? "block" : "none";
+        }
+
+        function showContent(contentId, reportId, insightId) {
+            var contents = document.querySelectorAll('.content');
+            var reports = document.querySelectorAll('.report');
+            var insights = document.querySelectorAll('.insight');
+
+            contents.forEach(content => content.style.display = 'none');
+            reports.forEach(report => report.style.display = 'none');
+            insights.forEach(insight => insight.style.display = 'none');
+
+            document.getElementById(contentId).style.display = 'block';
+            document.getElementById(reportId).style.display = 'block';
+            document.getElementById(insightId).style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.style.display = 'none');
+        });
+    </script>
+</body>
+</html>

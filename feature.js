@@ -1,8 +1,3 @@
-function toggleContent(id) {
-    var content = document.getElementById(id);
-    content.style.display = content.style.display === "none" ? "block" : "none";
-}
-
 function showReport(reportId, insightId) {
     var reports = document.querySelectorAll('.content');
     var insights = document.querySelectorAll('.insights');

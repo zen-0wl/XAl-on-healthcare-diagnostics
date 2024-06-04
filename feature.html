@@ -270,30 +270,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function toggleContent(id) {
-            var content = document.getElementById(id);
-            content.style.display = content.style.display === "none" ? "block" : "none";
-        }
-
-        function showContent(contentId, reportId, insightId) {
-            var contents = document.querySelectorAll('.content');
-            var reports = document.querySelectorAll('.report');
-            var insights = document.querySelectorAll('.insight');
-
-            contents.forEach(content => content.style.display = 'none');
-            reports.forEach(report => report.style.display = 'none');
-            insights.forEach(insight => insight.style.display = 'none');
-
-            document.getElementById(contentId).style.display = 'block';
-            document.getElementById(reportId).style.display = 'block';
-            document.getElementById(insightId).style.display = 'block';
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            var contents = document.querySelectorAll('.content');
-            contents.forEach(content => content.style.display = 'none');
-        });
-    </script>
+    <script src="feature.js"></script>
 </body>
 </html>

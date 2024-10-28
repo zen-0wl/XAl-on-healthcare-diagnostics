@@ -1,1 +1,157 @@
-# XAl-on-healthcare-diagnostics
+# Explainable AI (XAI) for Chronic Illness Diagnostics
+
+**Final Year Project (FYP)**
+
+---
+
+## Table of Contents
+
+* [Abstract](#abstract)
+* [Introduction](#introduction)
+* [Literature Review](#literature-review)
+* [Experimental Setup](#experimental-setup)
+* [Methodology](#methodology)
+* [Results](#results)
+* [Conclusion](#conclusion)
+* [Future Work](#future-work)
+* [How to Run the Code](#how-to-run-the-code)
+* [References](#references)
+
+---
+
+## Abstract
+
+The rising incidence of chronic illnesses, such as stroke and cancer, demands advanced diagnostic models that are both **accurate** and **explainable** for healthcare professionals. This project introduces an **Explainable Artificial Intelligence (XAI) model** to enhance the interpretability of healthcare diagnostics. The structured methodology followed includes pre-modeling, modeling, and post-modeling phases, ensuring the datasets were collected, cleaned, and preprocessed thoroughly. The resulting model aims to foster transparency, enabling clinicians to trust AI predictions and use them to improve patient outcomes.
+
+---
+
+## Introduction
+
+AI models are becoming essential tools in healthcare for tasks like **predicting stroke risk** or  **diagnosing cancer** . However, their black-box nature raises concerns about trust and interpretability. This project focuses on designing explainable models that balance predictive performance with transparency, helping healthcare providers make informed decisions.
+
+---
+
+## Literature Review
+
+The project leverages **XAI techniques** such as:
+
+* **LIME** and **Eli5** for model explanation on tabular data
+* **SHAP** for feature importance analysis
+* **Grad-CAM** for visual insights
+
+Previous research highlights the importance of **XAI models** in medical diagnostics by demonstrating improved trust among clinicians and better outcomes for patients. Ensemble models and adaptive optimizers are particularly effective for healthcare applications.
+
+---
+
+## Experimental Setup
+
+### 1. Data Collection
+
+* **EEG datasets** for stroke prediction were collected from multiple sources to ensure comprehensive coverage.
+* The datasets include information on  **smoking habits, glucose levels, hypertension** , and other health indicators.
+
+### 2. Data Preprocessing
+
+* **Normalization** and **standardization** ensured consistency across sources.
+* Missing data and outliers were handled using **mean imputation** and  **outlier detection** .
+* Encoding techniques were applied to maintain uniformity across datasets.
+
+### 3. Feature Selection and Extraction
+
+* Methods such as **recursive feature elimination** and **correlation-based filtering** were used to identify relevant features, improving predictive accuracy.
+
+### 4. Model Selection
+
+* Models such as **Adaptive Gradient Boosting** and ensemble models with **adaptive optimizers** were chosen to predict stroke risk.
+
+---
+
+## Methodology
+
+### Pre-Modeling Phase
+
+1. **Characterize Input Data**
+2. **Perform Exploratory Data Analysis (EDA)**
+3. **Standardize the Dataset**
+4. **Extract Explainable Features**
+5. **Summarize the Dataset**
+
+### Modeling Phase
+
+1. **Design Explainable Model Architectures**
+2. **Adopt Hybrid Models or Neural Networks**
+3. **Implement Ensemble Models for Accuracy and Interpretability**
+
+### Post-Modeling Phase
+
+1. **Extract Conclusions from Experiments**
+2. **Define Explanation Targets and Drivers**
+3. **Provide Macro-Explanations for Healthcare Professionals**
+4. **Validate Model Outputs for Interpretability**
+
+---
+
+## Results
+
+The project analyzed how features such as **age, BMI, hypertension, smoking status,** and **glucose levels** influence stroke risk using XAI techniques.
+
+* **SHAP analysis** revealed:
+  * **Age** is a dominant predictor of stroke.
+  * **Smoking** and **hypertension** significantly increase stroke probability.
+  * **Higher glucose levels** correlate with greater stroke risk.
+
+#### Visualizations:
+
+* **Figure 4** : Smoking status effect on stroke risk
+* **Figure 5** : Average glucose levels and stroke likelihood
+* **Figure 6** : Combined influence of age and BMI on stroke
+
+The XAI models provided **detailed explanations** for predictions, giving healthcare professionals actionable insights.
+
+---
+
+## Conclusion
+
+This project demonstrates the potential of **XAI techniques** in chronic illness diagnostics by balancing model accuracy with transparency. By incorporating tools such as **LIME, SHAP,** and  **Grad-CAM** , the models offer explainable predictions, enhancing trust among medical professionals. The findings emphasize the need for explainable healthcare models that can aid in effective clinical decision-making.
+
+---
+
+## Future Work
+
+* **Extend the model** to include other chronic illnesses like cancer.
+* **Integrate real-time data** from wearable health devices.
+* Explore **new XAI techniques** to further improve interpretability.
+* Conduct clinical trials to validate the model's effectiveness in real-world scenarios.
+
+---
+
+## How to Run the Code
+
+1. **Clone the repository** :
+
+<pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">bash</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">git clone https://github.com/zen-0wl/XAl-on-healthcare-diagnostics.git 
+   cd XAl-on-healthcare-diagnostics</code></div></div></pre>
+
+2. **Run the model** : 
+
+<pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">bash</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">feature-selection.ipynb</code></div></div></pre>
+
+3. **View results** :
+   Run `feature.html` file to access **visualizations** and  **reports** on a webpage.
+
+---
+
+## References
+
+* Lundberg, S. M., & Lee, S.-I. (2017). A unified approach to interpreting model predictions. Advances in Neural Information Processing Systems.
+* Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). "Why should I trust you?": Explaining the predictions of any classifier. Proceedings of the 22nd ACM SIGKDD Conference.
+
+---
+
+## Acknowledgments
+
+Special thanks to my **supervisor** namely Dr. Sharyar Wani, **university**, **friends** and **family** for their guidance and continuous support throughout the project. This work wouldn't have been possible without access to **public healthcare datasets** and  **open-source XAI tools**. 
+
+---
+
+This **README** aims to provide a comprehensive overview of the project, serving as a quick guide for anyone interested in understanding the scope, methodology, and results of the research. Feel free to reach out for any questions or collaboration opportunities!

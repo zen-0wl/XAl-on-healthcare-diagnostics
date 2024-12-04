@@ -21,6 +21,9 @@ target_column = 'stroke'
 X = data.drop(columns=[target_column])
 y = data[target_column]
 
+categorical_columns = ['gender', 'ever_married', 'work_type', 'Residence_type', 'smoking_status']
+numerical_columns = ['age', 'avg_glucose_level', 'bmi']
+
 def preprocess_data(X_train, X_test, categorical_columns, numerical_columns):
     """
     Apply preprocessing pipeline to the training and testing data.
@@ -42,7 +45,6 @@ def preprocess_data(X_train, X_test, categorical_columns, numerical_columns):
             ('cat', OneHotEncoder(handle_unknown='ignore'), categorical_columns)  # Encode categorical columns
         ]
     )
-    
 
     pipeline = Pipeline(steps=[('preprocessor', preprocessor)])
 
@@ -55,8 +57,5 @@ def preprocess_data(X_train, X_test, categorical_columns, numerical_columns):
     return X_train_processed, X_test_processed, pipeline
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-categorical_columns = ['gender', 'ever_married', 'work_type', 'Residence_type', 'smoking_status']
-numerical_columns = ['age', 'avg_glucose_level', 'bmi']
 
 X_train_processed, X_test_processed, pipeline = preprocess_data(X_train, X_test, categorical_columns, numerical_columns)

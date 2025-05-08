@@ -151,10 +151,6 @@ feature-selection.ipynb
 
 ---
 
-## Acknowledgments
+--- 
 
-Special thanks to my **supervisor** namely Dr. Sharyar Wani, **university**, **friends** and **family** for their guidance and continuous support throughout the project. This work wouldn't have been possible without access to **public healthcare datasets** and  **open-source XAI tools**.
-
----
-
-This **README** aims to provide a comprehensive overview of the project, serving as a quick guide for anyone interested in understanding the scope, methodology, and results of the research. Feel free to reach out for any questions or collaboration opportunities!
+Feel free to reach out for any questions or collaboration opportunities!

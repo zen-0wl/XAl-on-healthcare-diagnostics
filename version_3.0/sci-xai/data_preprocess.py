@@ -6,7 +6,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from imblearn.combine import SMOTEENN
 
-file_path = 'C:/Users/zen/Documents/-- four/s2/FYP I/XAl-on-healthcare-diagnostics/version_3.0/healthcare-dataset-stroke-data.csv'
+file_path = 'C:/Users/zen/Documents/Research Publications/XAl-on-healthcare-diagnostics/version_3.0/healthcare-dataset-stroke-data.csv'
 data = pd.read_csv(file_path)
 
 print(data.info())

@@ -18,7 +18,12 @@ dependencies = [
     "matplotlib (>=3.10.1,<4.0.0)",
     "interpret (>=0.6.10,<0.7.0)",
     "jupyterlab (>=4.4.2,<5.0.0)",
-    "imbalanced-learn (>=0.14.0,<0.15.0)"
+    "imbalanced-learn (>=0.14.0,<0.15.0)",
+    "keras (>=3.11.3,<4.0.0)",
+    "tensorflow (>=2.20.0,<3.0.0)",
+    "eli5 (>=0.16.0,<0.17.0)",
+    "lime (>=0.2.0.1,<0.3.0.0)",
+    "ipython (>=9.6.0,<10.0.0)"
 ]
 
 
